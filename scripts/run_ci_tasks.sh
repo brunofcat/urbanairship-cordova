@@ -56,7 +56,9 @@ fi
 
 if [ "$ANDROID" = "true" ]; then
   # Make sure google-services.json exists
-  GOOGLE_SERVICES_FILE_PATH="$(pwd)/platforms/android/app/google-services.json"
+  # GOOGLE_SERVICES_FILE_PATH="$(pwd)/platforms/android/app/google-services.json"
+  GOOGLE_SERVICES_FILE_PATH="Airshipmobiledemo/platforms/android/app/google-services.json"
+  
   if [[ ! -f ${GOOGLE_SERVICES_FILE_PATH} ]]; then
     if [[ "${GOOGLE_SERVICES_JSON:-}" == "" ]]; then
       echo "ERROR: You must provide ${GOOGLE_SERVICES_FILE_PATH}."
