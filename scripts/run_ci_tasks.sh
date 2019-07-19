@@ -55,10 +55,9 @@ if [ "$ANDROID" = "true" ] || [ "$IOS" = "true" ]; then
 fi
 
 if [ "$ANDROID" = "true" ]; then
-  echo "pwd: $(pwd)"
   # Make sure google-services.json exists
   # GOOGLE_SERVICES_FILE_PATH="$(pwd)/platforms/android/app/google-services.json"
-  GOOGLE_SERVICES_FILE_PATH="$(pwd)/app/google-services.json"
+  GOOGLE_SERVICES_FILE_PATH="com.outsystemsenterprise.medtronicdev.Airshipmobiledemo/platforms/app/google-services.json"
   
   if [[ ! -f ${GOOGLE_SERVICES_FILE_PATH} ]]; then
     if [[ "${GOOGLE_SERVICES_JSON:-}" == "" ]]; then
