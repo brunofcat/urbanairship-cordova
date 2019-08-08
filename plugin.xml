@@ -19,6 +19,9 @@
     <js-module name="UrbanAirship" src="www/UrbanAirship.js">
         <clobbers target="UAirship"/>
     </js-module>
+        
+    <hook type="before_plugin_install" src="hooks/outsystems/handle_google_services.js" />
+    <hook type="after_plugin_install" src="hooks/outsystems/google_services_cleanup.js" />
 
     <!-- android -->
     <platform name="android">
@@ -185,7 +188,7 @@
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="UrbanAirship-iOS-SDK" spec="11.1.1" />
+                <pod name="UrbanAirship-iOS-SDK" spec="11.1.0" />
             </pods>
         </podspec>
 
