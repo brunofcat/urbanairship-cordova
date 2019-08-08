@@ -372,18 +372,17 @@
         <resource-file src="src/ios/Airship/AirshipResources.bundle"/>
 
         <!-- Airship library -->
-        <!--<source-file framework="true" src="src/ios/Airship/libUAirship-10.2.2.a"/>-->
+        <source-file framework="true" src="src/ios/Airship/libUAirship-10.2.2.a"/>
             
         <!-- Airship library -->
-        <podspec>
+        <!-- <podspec>
             <config>
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
             <pods use-frameworks="true">
-                <!--<pod name="UrbanAirship-iOS-SDK" spec="11.1.1" />-->
-                    <pod name="UrbanAirship-iOS-SDK" git="https://github.com/urbanairship/ios-library.git" tag="11.1.1" modular_headers="false" />      
+                <pod name="UrbanAirship-iOS-SDK" spec="10.2.2.a" />
             </pods>
-        </podspec>    
+        </podspec> -->  
 
         <!-- System frameworks -->
         <framework src="libsqlite3.dylib" />
