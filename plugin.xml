@@ -12,7 +12,8 @@
 
     <engines>
         <engine name="cordova-android" version=">=4.1.0"/>
-        <engine name="cordova-ios" version=">=4.3.0"/>
+        <!--<engine name="cordova-ios" version=">=4.3.0"/>-->
+        <engine name="cordova-ios" version=">=5.0.1"/>
     </engines>
 
     <js-module name="UrbanAirship" src="www/UrbanAirship.js">
